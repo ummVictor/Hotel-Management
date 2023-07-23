@@ -4,6 +4,7 @@ import java.awt.*;
 public class CheckOut extends JFrame {
 
     CheckOut(){
+        //
         JPanel panel = new JPanel();
         panel.setBounds(5, 5, 790, 390);
         panel.setBackground(new Color(3,45,48));
