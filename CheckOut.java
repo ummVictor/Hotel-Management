@@ -19,6 +19,15 @@ public class CheckOut extends JFrame {
         //label is displayed on the panel
         panel.add(label);
 
+
+        //create the Customer ID text
+        JLabel UserId = new JLabel("Customer ID");
+        UserId.setBounds(30, 80, 100, 30);
+        UserId.setFont(new Font ("Times New Roman", Font.PLAIN, 12));
+        UserId.setForeground(Color.WHITE);
+        //UserID is displayed on the panel
+        panel.add(UserId);
+
         setLayout(null);
         setSize(800, 400);
         setLocation(500, 210);
