@@ -29,7 +29,7 @@ public class CheckOut extends JFrame {
         panel.add(UserId);
 
         Choice Customer = new Choice();
-        Customer.setBounds(30, 80, 100, 30)
+        Customer.setBounds(30, 80, 100, 30);
         panel.add(Customer);
 
 
