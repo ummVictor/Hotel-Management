@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+font-family: "Poppins", sans-serif;
+background: #A03BDB;
+
+
+
+Welcome to "Enchanted Oasis Hotel & Spa" - a hidden gem nestled amidst lush tropical gardens and pristine beaches. Our luxurious hotel offers a 
+harmonious blend of modern elegance and traditional charm, providing you with a serene escape from the hustle and bustle of everyday life.
+<p> Escape to a place where dreams come true and leave with cherished memories that will last a lifetime <p>
+
+123 Ocean View Drive, Palm Shores, CA 98765, United States
+(555) 123-4567
+reservations@seasideresorthotel.com
