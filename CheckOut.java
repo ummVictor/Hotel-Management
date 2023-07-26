@@ -29,14 +29,9 @@ public class CheckOut extends JFrame {
         panel.add(UserId);
 
         Choice Customer = new Choice();
-        Customer.setBounds(30, 80, 100, 30)
+        Customer.setBounds(30, 80, 100, 30);
         panel.add(Customer);
 
-        JLabel UserId = new JLabel("Customer ID");
-        UserId.setBounds(30, 80, 100, 30);
-        UserId.setFont(new Font ("Times New Roman", Font.PLAIN, 12));
-        UserId.setForeground(Color.WHITE);
-        panel.add(UserId);
 
         setLayout(null);
         setSize(800, 400);
