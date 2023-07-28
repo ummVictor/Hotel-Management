@@ -29,7 +29,14 @@
                 <ul id="menulist">
                     <li><a href="#home">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#in-n-out">in-n-out</a></li>
+                                        <!--victor changes-->
+                    <li><a href="#in-n-out"class="primary-btn" onclick="redirectToInNOut()">IN-N-OUT</a></li> <!-- Modified link as a button -->
+                    
+                        <script>
+                            function redirectToInNOut() {
+                            window.location.href = "in-n-out.html";
+                        }   
+                        </script>                    
                     <li><a href="#status">status</a></li>
                     <li><a href="#location">location</a></li>
                     <li><a href="#contact">contact</a></li>
