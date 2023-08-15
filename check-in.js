@@ -29,4 +29,8 @@ document.addEventListener("DOMContentLoaded", function() {
       messageDiv.innerHTML = `Welcome, ${capitalizedFirstName} ${capitalizedLastName}! Your room, ${roomNumber}, has been available since ${formattedTime}. Feel free to walk into your room. Any further questions, you can ask the hotel front desk.`;
     }
   });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> Victor'sBranch
