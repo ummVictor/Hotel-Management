@@ -1,14 +1,20 @@
+<!-- created: 07/21 -->
+<!-- Victor Um -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Check Out</title>
+  <!-- Linking to an external CSS file for styling -->
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <!-- Internal styles for the page -->
   <style>
+    /* Styling for the body element */
     body {
       font-family: Arial, sans-serif;
       background-color: #f7f7f7;
       text-align: center;
     }
+    /* Styling for the main content container */
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -17,18 +23,22 @@
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
+    /* Styling for the main heading */
     h1 {
       color: #333;
       margin-bottom: 20px;
     }
+    /* Styling for the form element */
     form {
       text-align: left;
     }
+    /* Styling for labels above input fields */
     label {
       display: block;
       margin-bottom: 10px;
       font-weight: bold;
     }
+    /* Styling for input fields */
     input {
       width: 100%;
       padding: 10px;
@@ -36,6 +46,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+    /* Styling for the "Check Out" button */
     button {
       display: inline-block;
       padding: 10px 20px;
@@ -47,12 +58,15 @@
       transition: background-color 0.3s ease;
       cursor: pointer;
     }
+    /* Styling for the "Check Out" button on hover */
     button:hover {
       background-color: #0056b3;
     }
+    /* Styling for the container of buttons */
     .btn-container {
       margin-top: 20px;
     }
+    /* Styling for the generic button style */
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -65,22 +79,32 @@
       cursor: pointer;
       margin-right: 10px;
     }
+    /* Styling for the generic button style on hover */
     .btn:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
+  <!-- Main content container -->
   <div class="container">
+    <!-- Main heading of the page -->
     <h1>Check Out</h1>
+    <!-- Form for checking out guests, sending data to "/checkout" endpoint using POST method -->
     <form action="/checkout" method="POST">
+      <!-- Label and input field for room number -->
       <label for="room_number">Room Number:</label>
       <input type="text" name="room_number" required>
+      <!-- Button to submit the check-out form -->
       <button type="submit">Check Out</button>
     </form>
+    <!-- Container for additional buttons -->
     <div class="btn-container">
+      <!-- Button to navigate back to occupied rooms page -->
       <a class="btn" href="/">Back to Occupied Rooms</a>
+      <!-- Button to navigate to the check-in page -->
       <a class="btn" href="/checkin">Check In</a>
+      <!-- Button to navigate to the support page -->
       <a class="btn" href="/support">Support</a>
     </div>
   </div>
