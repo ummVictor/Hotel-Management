@@ -1,14 +1,20 @@
+<!-- Victor Um -->
+<!-- Victor Um -->
 <!DOCTYPE html>
 <html>
 <head>
   <title>Check In</title>
+  <!-- Linking to an external CSS file for styling -->
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <!-- Internal styles for the page -->
   <style>
+    /* Styling for the body element */
     body {
       font-family: Arial, sans-serif;
       background-color: #f7f7f7;
       text-align: center;
     }
+    /* Styling for the main content container */
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -17,18 +23,22 @@
       border-radius: 10px;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     }
+    /* Styling for the main heading */
     h1 {
       color: #333;
       margin-bottom: 20px;
     }
+    /* Styling for the form element */
     form {
       text-align: left;
     }
+    /* Styling for labels above input fields */
     label {
       display: block;
       margin-bottom: 10px;
       font-weight: bold;
     }
+    /* Styling for input fields and select dropdown */
     input, select {
       width: 100%;
       padding: 10px;
@@ -36,6 +46,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+    /* Styling for the "Check In" button */
     button {
       display: inline-block;
       padding: 10px 20px;
@@ -47,12 +58,15 @@
       transition: background-color 0.3s ease;
       cursor: pointer;
     }
+    /* Styling for the "Check In" button on hover */
     button:hover {
       background-color: #0056b3;
     }
+    /* Styling for the container of buttons */
     .btn-container {
       margin-top: 20px;
     }
+    /* Styling for the generic button style */
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -65,37 +79,52 @@
       cursor: pointer;
       margin-right: 10px;
     }
+    /* Styling for the generic button style on hover */
     .btn:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
+  <!-- Main content container -->
   <div class="container">
+    <!-- Main heading of the page -->
     <h1>Check In</h1>
+    <!-- Display an error message if present -->
     <% if (errorMessage) { %>
       <p class="error"><%= errorMessage %></p>
     <% } %>
+    <!-- Form for checking in guests, sending data to "/checkin" endpoint using POST method -->
     <form action="/checkin" method="POST">
+      <!-- Label and input field for room number -->
       <label for="room_number">Room Number:</label>
       <input type="text" name="room_number" required>
+      <!-- Label and input field for guest's first name -->
       <label for="guest_name">First Name:</label>
       <input type="text" name="guest_name" required>
+      <!-- Label and input field for guest's last name -->
       <label for="last_name">Last Name:</label>
       <input type="text" name="last_name" required>
+      <!-- Label and input field for number of days of stay -->
       <label for="num_of_days">Number of Days:</label>
       <input type="number" name="num_of_days" required>
+      <!-- Label and dropdown for selecting room type -->
       <label for="room_type">Room Type:</label>
       <select name="room_type">
         <option value="standard">Standard</option>
         <option value="double">Double</option>
         <option value="grand_suite">Grand Suite</option>
       </select>
+      <!-- Button to submit the check-in form -->
       <button type="submit">Check In</button>
     </form>
+    <!-- Container for additional buttons -->
     <div class="btn-container">
+      <!-- Button to navigate back to occupied rooms page -->
       <a class="btn" href="/">Back to Occupied Rooms</a>
+      <!-- Button to navigate to the check-out page -->
       <a class="btn" href="/checkout">Check Out</a>
+      <!-- Button to navigate to the support page -->
       <a class="btn" href="/support">Support</a>
     </div>
   </div>
