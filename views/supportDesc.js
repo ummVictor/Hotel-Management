@@ -1,3 +1,6 @@
+// created on 7/20 
+// Cain Coyco
+
 // Get all the links on the page
 const links = document.querySelectorAll("a");
 
