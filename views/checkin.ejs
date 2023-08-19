@@ -98,13 +98,13 @@
     <form action="/checkin" method="POST">
       <!-- Label and input field for room number -->
       <label for="room_number">Room Number:</label>
-      <input type="text" name="room_number" required>
+      <input type="number" name="room_number" required>
       <!-- Label and input field for guest's first name -->
       <label for="guest_name">First Name:</label>
-      <input type="text" name="guest_name" required>
+      <input type="text" name="guest_name" pattern="[A-Za-z]+" title="Please enter alphabetic characters only" required>
       <!-- Label and input field for guest's last name -->
       <label for="last_name">Last Name:</label>
-      <input type="text" name="last_name" required>
+      <input type="text" name="last_name" pattern="[A-Za-z]+" title="Please enter alphabetic characters only" required>
       <!-- Label and input field for number of days of stay -->
       <label for="num_of_days">Number of Days:</label>
       <input type="number" name="num_of_days" required>
