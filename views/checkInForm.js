@@ -4,8 +4,6 @@ class CheckInForm {
       // Constructor code
     }
   
-    // Other methods of the CheckInForm class
-  
     validateFormData(formData) {
       // Validation logic
     }
