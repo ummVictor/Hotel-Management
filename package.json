@@ -4,7 +4,8 @@
   "description": "Hotel Management Application for comp 380",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,6 @@
   },
   "devDependencies": {
     "jest": "^29.6.2"
-  }
+  },
+  "keywords": []
 }
