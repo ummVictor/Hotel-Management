@@ -72,7 +72,13 @@
         <h1>Occupied Rooms</h1>
         <ul>
             <% occupiedRooms.forEach(room => { %>
-                <li>Room <%= room.room_number %> - <%= room.guest_name %></li>
+                <li>
+                    Room <%= room.room_number %> - <%= room.guest_name %> 
+                    <form action="/checkout" method="POST" style="display: inline;">
+                        <input type="hidden" name="room_number" value="<%= room.room_number %>">
+                        <button type="submit" class="btn">Checkout</button>
+                    </form>
+                </li>
             <% }); %>
         </ul>
         <div class="btn-container">
