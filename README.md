@@ -1,1 +1,3 @@
+Intro Software Engineering and Lab - Hotel Booking System   June 2023 – August 2023
+
 Created a comprehensive hotel check-in/check-out system, leveraging Node.js for server-side scripting and HTML/CSS/JavaScript for front-end development. Integrated user authentication and authorization to ensure secure access to sensitive information. Designed and implemented a database schema using MongoDB to store guest data and room availability. Performed comprehensive testing and documentation to ensure system reliability, including unit tests, end-to-end testing, and architectural/API documentation for streamlined maintenance and updates. Collaborated with a team to create Unified Modeling Language (UML) diagrams
